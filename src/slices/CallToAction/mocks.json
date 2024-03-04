@@ -1,0 +1,32 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Commodo quis nostrud officia. Adipisicing non dolor nulla laboris labore id fugiat aliqua et nulla."
+						}
+					}
+				]
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "mistake",
+				"type": "Text"
+			},
+			"button": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			}
+		},
+		"items": []
+	}
+]

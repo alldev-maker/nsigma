@@ -1,0 +1,36 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Labore ad magna ad eiusmod cillum."
+						}
+					}
+				]
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit est mollit magna consequat. Ex excepteur nisi qui ad sit deserunt ea minim commodo eu. Duis laboris adipisicing eu."
+						}
+					}
+				]
+			},
+			"textcolor": {
+				"__TYPE__": "FieldContent",
+				"value": "#790a88",
+				"type": "Color"
+			}
+		},
+		"items": []
+	}
+]

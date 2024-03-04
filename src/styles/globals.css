@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts  */
+/* @font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-Black.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-ExtraBold.otf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-Italic.otf");
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-Medium.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: rota;
+  src: url("../../public/fonts/Rota-SemiBold.otf");
+  font-weight: 600;
+} */
+
+@font-face {
+  font-family: poppin;
+  src: url("../../public/fonts/poppin/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: poppin;
+  src: url("../../public/fonts/poppin/Poppins-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: poppin;
+  src: url("../../public/fonts/poppin/Poppins-ExtraBold.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: poppin;
+  src: url("../../public/fonts/poppin/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: poppin;
+  src: url("../../public/fonts/poppin/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: poppin;
+  src: url("../../public/fonts/poppin/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: roboto;
+  src: url("../../public/fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: roboto;
+  src: url("../../public/fonts/Roboto/Roboto-LightItalic.ttf");
+}
+
+a {
+  font-family: poppin;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: poppin;
+}
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+h4 {
+  @apply text-xl;
+}
+h5 {
+  @apply text-lg;
+}
+h6 {
+  @apply text-base;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.grad {
+  background: -webkit-linear-gradient(45deg, #eb9204, #83e868, #83e868);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fade {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+.title strong {
+  background: -webkit-linear-gradient(45deg, #eb9204, #83e868, #83e868);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.richtext > * {
+  @apply mb-2;
+}
+
+.line-border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border: 1px dashed gray;
+  height: 100%;
+  left: 50%;
+  z-index: 1;
+}
+
+._border {
+  border: 2px dashed gray;
+}
+._border p,
+._border span {
+  font-family: poppin !important;
+}
+
+._border::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 8px;
+  height: 8px;
+  background: #00ebff;
+  border-radius: 10px;
+}
+._border::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 8px;
+  height: 8px;
+  background: #f6af23;
+  border-radius: 10px;
+}
+
+._dott_bottom_left {
+  position: absolute;
+  bottom: -7px;
+  left: -7px;
+  width: 8px;
+  height: 8px;
+  background: #f7476b;
+  border-radius: 10px;
+}
+._dott_bottom_right {
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  width: 8px;
+  height: 8px;
+  background: #92da59;
+  border-radius: 10px;
+}
+
+._contnet h2,
+._contnet h3 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  color: rgb(255, 255, 255);
+}
+
+._contnet p {
+  color: rgb(186, 187, 187);
+  font-size: 18px;
+  font-variant: normal;
+}
+._contnet ul {
+  padding-left: 1rem;
+}
+._contnet li {
+  color: rgb(186, 187, 187);
+  font-size: 18px;
+  font-variant: normal;
+  margin: 5px 0;
+  list-style: disc;
+}
+._contnet strong {
+  color: rgb(255, 255, 255);
+}
+
+@screen sm {
+  ._contnet h2,
+  ._contnet h3 {
+    font-size: 1.8rem;
+  }
+}
