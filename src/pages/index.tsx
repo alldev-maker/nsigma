@@ -19,13 +19,14 @@ const Home: FC<any> = ({ page }) => {
     why_cards,
     meta_title,
     meta_description,
+    hero_video,
   } = page.data;
 
   return (
     <>
       <DefaultSeo title={meta_title} description={meta_description} />
       <div className="bg-[#000200]">
-        <Banner data={questions} />
+        <Banner data={questions} video={hero_video?.url} />
         <Expertise data={expertise} />
         <EngagementStrategies data={engagement} />
         <CaseStudies data={case_studies} />

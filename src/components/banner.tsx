@@ -1,7 +1,7 @@
 import Questions from "./Questions";
 import TypeWriter from "./TypeWriter";
 
-export default function Banner({ data }: any) {
+export default function Banner({ data, video }: any) {
   return (
     <>
       <main className="relative flex items-center justify-center h-screen mb-12 overflow-hidden -mt-20">
@@ -29,7 +29,7 @@ export default function Banner({ data }: any) {
           playsInline
           className="absolute z-10 w-auto min-w-full h-full max-w-none object-cover"
         >
-          <source src="/test2.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </main>
